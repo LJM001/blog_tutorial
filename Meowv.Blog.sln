@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.Application", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.EntityFrameworkCore", "src\Meowv.Blog.EntityFrameworkCore\Meowv.Blog.EntityFrameworkCore.csproj", "{C956DD76-69C8-4A9C-83EA-D17DF83340FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.HttpApi.Hosting", "src\Meowv.Blog.Web\Meowv.Blog.HttpApi.Hosting.csproj", "{068855E8-9240-4F1A-910B-CF825794513B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.HttpApi.Hosting", "src\Meowv.Blog.HttpApi.Hosting\Meowv.Blog.HttpApi.Hosting.csproj", "{068855E8-9240-4F1A-910B-CF825794513B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA9AC87F-097E-4F15-8393-4BC07735A5B0}"
 EndProject
@@ -21,19 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.Application.Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.HttpApi", "src\Meowv.Blog.HttpApi\Meowv.Blog.HttpApi.csproj", "{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.HttpApi.Client", "src\Meowv.Blog.HttpApi.Client\Meowv.Blog.HttpApi.Client.csproj", "{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.Application.Caching", "Meowv.Blog.Application.Caching\Meowv.Blog.Application.Caching.csproj", "{E749B3BB-080F-4008-8F3A-33D12397709F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.DbMigrator", "src\Meowv.Blog.DbMigrator\Meowv.Blog.DbMigrator.csproj", "{AA94D832-1CCC-4715-95A9-A483F23A1A5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.BackgroundJobs", "Meowv.Blog.BackgroundJobs\Meowv.Blog.BackgroundJobs.csproj", "{88179DB5-1717-4883-A6EB-655BA3B86A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meowv.Blog.Application.Caching", "Meowv.Blog.Application.Caching\Meowv.Blog.Application.Caching.csproj", "{72D859D9-CE6E-45A7-81BA-C821314EE1D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.Swagger", "Meowv.Blog.Swagger\Meowv.Blog.Swagger.csproj", "{64B87209-4CA6-4D2C-A045-D78C7A293F3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meowv.Blog.BackgroundJobs", "Meowv.Blog.BackgroundJobs\Meowv.Blog.BackgroundJobs.csproj", "{92F931D7-767D-4FF7-97C3-C0A357EE9900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meowv.Blog.ToolKits", "Meowv.Blog.ToolKits\Meowv.Blog.ToolKits.csproj", "{0CF8F662-8C7C-4C07-A901-7FF2E4CB164D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meowv.Blog.Swagger", "Meowv.Blog.Swagger\Meowv.Blog.Swagger.csproj", "{9D497127-4AE9-4892-B716-A95150124A2A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meowv.Blog.ToolKits", "Meowv.Blog.ToolKits\Meowv.Blog.ToolKits.csproj", "{DFC7633E-6C42-4316-82B5-23D3B8A21997}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{39ECB28D-F718-4AF3-A79F-0191217EE27C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{731730B9-645C-430A-AB05-3FC2BED63614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,30 +69,22 @@ Global
 		{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72D859D9-CE6E-45A7-81BA-C821314EE1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72D859D9-CE6E-45A7-81BA-C821314EE1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72D859D9-CE6E-45A7-81BA-C821314EE1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72D859D9-CE6E-45A7-81BA-C821314EE1D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92F931D7-767D-4FF7-97C3-C0A357EE9900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92F931D7-767D-4FF7-97C3-C0A357EE9900}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92F931D7-767D-4FF7-97C3-C0A357EE9900}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92F931D7-767D-4FF7-97C3-C0A357EE9900}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9D497127-4AE9-4892-B716-A95150124A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D497127-4AE9-4892-B716-A95150124A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D497127-4AE9-4892-B716-A95150124A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D497127-4AE9-4892-B716-A95150124A2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFC7633E-6C42-4316-82B5-23D3B8A21997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFC7633E-6C42-4316-82B5-23D3B8A21997}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFC7633E-6C42-4316-82B5-23D3B8A21997}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFC7633E-6C42-4316-82B5-23D3B8A21997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E749B3BB-080F-4008-8F3A-33D12397709F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E749B3BB-080F-4008-8F3A-33D12397709F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E749B3BB-080F-4008-8F3A-33D12397709F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E749B3BB-080F-4008-8F3A-33D12397709F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88179DB5-1717-4883-A6EB-655BA3B86A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88179DB5-1717-4883-A6EB-655BA3B86A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88179DB5-1717-4883-A6EB-655BA3B86A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88179DB5-1717-4883-A6EB-655BA3B86A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B87209-4CA6-4D2C-A045-D78C7A293F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B87209-4CA6-4D2C-A045-D78C7A293F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B87209-4CA6-4D2C-A045-D78C7A293F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B87209-4CA6-4D2C-A045-D78C7A293F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF8F662-8C7C-4C07-A901-7FF2E4CB164D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF8F662-8C7C-4C07-A901-7FF2E4CB164D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF8F662-8C7C-4C07-A901-7FF2E4CB164D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF8F662-8C7C-4C07-A901-7FF2E4CB164D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,23 +98,12 @@ Global
 		{42F719ED-8413-4895-B5B4-5AB56079BC66} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{520659C8-C734-4298-A3DA-B539DB9DFC0B} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{4164BDF7-F527-4E85-9CE6-E3C2D7426A27} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{3B5A0094-670D-4BB1-BFDD-61B88A8773DC} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{AA94D832-1CCC-4715-95A9-A483F23A1A5D} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{72D859D9-CE6E-45A7-81BA-C821314EE1D3} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{92F931D7-767D-4FF7-97C3-C0A357EE9900} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{9D497127-4AE9-4892-B716-A95150124A2A} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{DFC7633E-6C42-4316-82B5-23D3B8A21997} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{E749B3BB-080F-4008-8F3A-33D12397709F} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{88179DB5-1717-4883-A6EB-655BA3B86A3C} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{64B87209-4CA6-4D2C-A045-D78C7A293F3E} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{0CF8F662-8C7C-4C07-A901-7FF2E4CB164D} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}
 	EndGlobalSection
 EndGlobal
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{731730B9-645C-430A-AB05-3FC2BED63614}"
-      ProjectSection(SolutionItems) = preProject
-            .gitattributes = .gitattributes
-            .gitignore = .gitignore
-            common.props = common.props
-            LICENSE = LICENSE
-            README.md = README.md
-      EndProjectSection
-EndProject
